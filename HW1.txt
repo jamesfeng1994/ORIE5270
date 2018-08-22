@@ -1,0 +1,15 @@
+Zheng Feng
+NetID: zf72
+
+
+AWS EC2 Instance: We ran an instance using Amazon Web Services's EC2. We can run and store files using this cloud service, which could give us more memory and faster speed using more CPUs to do tasks simultaneously.
+
+Linux: We ran some command lines in Linux environment. Linux is better than Windows in ways such as security, open source. For developers, the Linux terminal offers superior environment when compared to Windows.
+
+Version control system Git: Git is a versoin control system and allows us to record the history of changes. People can work together using Git because of this advantage.
+
+Vim: We talked about Vim, which is a fast text editor in Linux. We learned some basic command lines.
+
+Shell: Shell is a script that allows us to store a number of commands and run them (be able to give values to parameters in the commands). It allows us to combine existing tools into powerful pipelines and handle large volumes of data automatically.
+
+Pycharm: A very good IDE for Python.
