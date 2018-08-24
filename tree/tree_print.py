@@ -59,11 +59,3 @@ class Node(object):
         self.value = value
         self.left = left
         self.right = right
-
-
-a = Node('1', None, None)
-
-
-tree = Tree(a)
-
-print(tree.print_tree())
