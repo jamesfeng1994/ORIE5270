@@ -6,7 +6,7 @@ class Tree(object):
     def get_depth(self, current, n):
         """
         This function is to get the depth of the tree using recursion
-        parameters: 
+        parameters:
             current: current tree node
             n: current level of the tree
         return: the depth of the tree
