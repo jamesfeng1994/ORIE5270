@@ -1,16 +1,6 @@
-
-# coding: utf-8
-
-# In[15]:
-
-
 import numpy as np
 from ast import literal_eval as make_tuple
 import heapq as hq
-
-
-# In[203]:
-
 
 def build_graph(name_txt_file):
     lines = open(name_txt_file,"r").readlines()
@@ -36,10 +26,6 @@ def build_graph(name_txt_file):
             graph[float(lines[2 * i])].append((float(neighbour[1:len(neighbour)]),float(weight[0:len(weight)-1])))
     
     return graph
-
-
-# In[204]:
-
 
 def find_shortest_path(name_txt_file, source, destination):
     graph = build_graph(name_txt_file)
@@ -78,10 +64,6 @@ def find_shortest_path(name_txt_file, source, destination):
         return dist[destination],path[destination]
     else:
         return int("inf"),[]
-
-
-# In[209]:
-
 
 def negative_loop(name_txt_file):
     graph = build_graph(name_txt_file)
@@ -128,13 +110,3 @@ def negative_loop(name_txt_file):
         return list(reversed(path))
     else:
         return "none"
-        
-        
-    
-
-
-# In[210]:
-
-
-negative_loop("graph_2.txt")
-
