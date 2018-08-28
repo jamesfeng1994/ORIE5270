@@ -57,8 +57,6 @@ def find_shortest_path(name_txt_file, source, destination):
                         store[0] = dist[node[0]]
                         F.remove(F[i])
                         hq.heappush(F,store)
-            print(path)
-
     
     if destination in dist.keys():
         return dist[destination],path[destination]
@@ -69,7 +67,6 @@ def negative_loop(name_txt_file):
     graph = build_graph(name_txt_file)
     N = len(graph.keys())
     edges = []
-    print(N)
     for key in graph:
         for i in range(len(graph[key])):
             current_edge = graph[key][i]
