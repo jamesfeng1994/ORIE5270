@@ -3,7 +3,9 @@ from ast import literal_eval as make_tuple
 import heapq as hq
 
 def build_graph(name_txt_file):
-    lines = open(name_txt_file,"r").readlines()
+    f = open(name_txt_file,"r")
+    lines = f.readlines()
+    f.close()
     lines = [lines[i].strip() for i in range(len(lines))]
     N = int(len(lines) / 2)
     graph = dict()
@@ -107,3 +109,5 @@ def negative_loop(name_txt_file):
         return list(reversed(path))
     else:
         return "none"
+
+print(find_shortest_path('shortest_path.txt', 1, 4))
