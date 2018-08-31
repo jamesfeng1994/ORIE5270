@@ -1,4 +1,3 @@
-import sys
 from pyspark import SparkConf, SparkContext
 import numpy as np
 

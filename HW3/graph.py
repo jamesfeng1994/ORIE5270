@@ -63,7 +63,7 @@ def find_shortest_path(name_txt_file, source, destination):
     if destination in dist.keys():
         return dist[destination],path[destination]
     else:
-        return int("inf"),[]
+        return float("inf"),[]
 
 def negative_loop(name_txt_file):
     graph = build_graph(name_txt_file)
@@ -110,4 +110,4 @@ def negative_loop(name_txt_file):
     else:
         return "none"
 
-print(find_shortest_path('shortest_path.txt', 1, 4))
+print(find_shortest_path('shortest_path.txt', 1, 5))
